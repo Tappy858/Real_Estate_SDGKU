@@ -1,0 +1,11 @@
+/*global*/
+margin-left
+
+/*header*/
+.site-init{
+    background-image: url(./img/banner.jpg);
+    background-color: grey;
+    height: 300px;
+    color: white;
+    background-position: center;
+}
