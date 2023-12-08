@@ -16,13 +16,31 @@ p{
     line-height: normal;
 }
 img{
-    max-width: 100%;
+    max-width: 80%;
 }
 
 /*utilities*/
-.foot-btn{
+.container{
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.btn-det{
+    background-color: orange;
+    display: inline-block;
     color: white;
+    text-align: center;
+    padding: 10px;
     text-decoration: none;
+    margin-top: 10px;
+    
+}
+.foot-btn{
+    background-color: orange;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    padding: 10px;
 }
 
 /*header*/
@@ -30,37 +48,61 @@ img{
     background-image: url(/img/header.jpg);
     background-position: center;    
     height: 450px;
+    color: white;
 } 
-.site-init a{     
+.site-init a{
+    color: white;
+    text-decoration: none;
+}
+nav a{     
     color: white; 
     text-decoration: none;
 }       
-.site-init h2{
-    color: white;
-    width: 85%;
-    margin-left: auto;
-    margin-right: auto;     
-}
 .con-header{
     height: 100px;     
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    width: 85%;
+    color: white;
+}
+
+/*body*/
+.con-more{
+    display: flex;
+    
+}
+.housesandmore{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.housesandmore h3{
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.con-indy{
+    
+    display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
-/*body*/
-.container{
-    width: 85%;
-    margin-left: auto;
-    margin-right: auto;
+.house-text ul{
+    list-style-type: none;
+    display: flex; 
+    justify-content: space-around; 
+    margin-top: 10px;
 }
-.con-more{
+.house-text li{
     display: flex;
     flex-direction: row;
 }
+.money{
+    color: green;
+}
+
+
 
 /*footer*/
 .site-end{
@@ -68,10 +110,14 @@ img{
     background-position: center; 
     background-color: black;
     color: white;    
-    height: 250px;
+    height: 30vh;
+    
 }
 .con-footer{
     width: 85%;
     margin-left: auto;
     margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    padding-top: 70px;
 }
