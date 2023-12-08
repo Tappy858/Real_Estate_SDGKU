@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        .input-control{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <input type="text" class="input-control" value="predifined value">
+        <input type="number" class="input-control" id="age">
+        <input type="email" class="input-control" placeholder="Add your email">
+        <input type="password" class="input-control" required>
+        <input type="color" class="input-control" required>
+        <input type="date" class="input-control" disabled>
+        <button>Add</button>
+    </form>
+    <br>
+    <form>
+        <label>select an option: </label>
+        <select>
+            <option value="option1">-- option 1 --</option>
+            <option value="option2">-- option 2 --</option>
+            <option value="option3">-- option 3 --</option>
+        </select>
+    </form>
+    <br>
+    <h1>Product Exercise: </h1>
+    <form action="">
+        <input type="text" class="input-control" placeholder="Add products name" required>
+        <input type="text" class="input-control" placeholder="Add a description" disabled>
+        <input type="number" class="input-control" placeholder="Add a price" required>
+        <label for="">Select the color of your product: </label>
+        <input type="color" class="input-control">
+        <label>Select the payment method: </label>
+        <select>
+            <option value="option1">-- Cash --</option>
+            <option value="option2">-- Debit/ Visa --</option>
+            <option value="option3">-- Paypal --</option>
+            <option value="option3">-- Venmo --</option>
+            <option value="option3">-- BTC --</option>
+        </select>
+        <button>Add</button>
+    </form>
+</body>
+</html>
