@@ -20,28 +20,69 @@
     </header>
     <main class="container">
     <br>
+    <div class="contact-title">
         <h2>Contact</h2>
         <p>Fill the next information</p>
-
+    </div>
+    <form action="">
         <fieldset>
             <legend>Personal Information</legend>
             <div class="input-cont">
                 <label for="">Name: </label>
-                <input type="text">
+                <input type="text" placeholder="Type your name" required>
             </div>
             <div class="input-cont">
                 <label for="">Email: </label>
-                <input type="email">
+                <input type="email" placeholder="Type your email" required>
             </div>
             <div class="input-cont">
                 <label for="">Phone Number: </label>
-                <input type="tel">
+                <input type="tel" placeholder="Type your phone number" required>
             </div>
             <div class="input-cont">
                 <label>Message:</label>
                 <textarea cols="30" rows="10"></textarea>
             </div>
         </fieldset>
+        <fieldset>
+            <legend>Product Information</legend>
+            <div class="input-cont">
+                <label for="">Type: </label>
+                <select>
+                    <option value="option1">-- Select an option --</option>
+                    <option value="option2">-- Debit/ Visa --</option>
+                    <option value="option3">-- Paypal --</option>
+                    <option value="option4">-- Venmo --</option>
+                    <option value="option5">-- BTC --</option>
+                </select>
+            </div>
+            <div class="input-cont">
+                <label for="">Number: </label>
+                <input type="number" placeholder="Add Quantity" required>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Contact Information</legend>
+            <div>
+                <label for="phone" class="shift">Phone: </label>
+                <input type="radio" id="phone" value="Phone">
+                <label for="email" class="shift">Email: </label>
+                <input type="radio" id="email" value="email">
+            </div>            
+            <div class="input-cont">
+                <p>If you wan to be contacted by phone, please select a date and time: </p>
+                <br>
+                <label for="">Date: </label>
+                <input type="date" required>
+            </div>
+            <div class="input-cont">
+                <label for="">Hour: </label>
+                <input type="time" required>
+            </div>
+        </fieldset>
+        <br>
+        <button class="contact-btn">Send</button>
+    </form>
     </main>
     <footer>
     </footer>

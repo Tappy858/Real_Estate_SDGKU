@@ -40,6 +40,14 @@ img{
     color: white;
     padding: 10px;
 }
+.contact-btn{
+    background-color: green;
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 100px;
+}
 
 /*header*/
 .site-init{
@@ -61,6 +69,8 @@ nav a{
     justify-content: space-between;
     flex-direction: row;
     color: white;
+    align-items: baseline;
+    padding-top: 25px;
 }
 /*contact header*/
 .bar{
@@ -140,6 +150,9 @@ legend{
 .input-cont{
     padding: 10px;
 }
+.shift{
+    margin-left: 10px;
+}
 .input-cont label{
     display: inline-block;
     width: 180px;
@@ -154,4 +167,7 @@ legend{
     border-radius: 5px;
     width: 70%;
 }
-
+.contact-title{
+    text-align: center;
+    font-size: 30px;
+}
