@@ -20,6 +20,7 @@ img{
     max-width: 100%;
 }
 
+
 /*utilities*/
 .container{
     width: 80%;
@@ -54,7 +55,7 @@ img{
     background-image: url(/img/header.jpg);
     background-position: center;
     background-size: cover;    
-    height: 450px;
+    height: 350px;
     color: white;
 } 
 .site-init a{
@@ -72,6 +73,15 @@ nav a{
     align-items: baseline;
     padding-top: 25px;
 }
+@media(max-width: 768px){
+    .con-header{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .site-init{
+        height: 32vh;
+    }
+}
 /*contact header*/
 .bar{
     background-color: black;
@@ -84,9 +94,21 @@ nav a{
 .bar a{
     color: white;
 }
+@media(max-width: 768px){
+    .bar{
+        flex-direction: column;
+        justify-content: center;
+    }
+}
 /*body*/
 .con-more{
     display: flex;  
+}
+@media(max-width: 768px){
+    .con-more{
+        flex-direction: column;
+        justify-content: center;   
+    }
 }
 .con-indy{   
     display: block
@@ -108,8 +130,7 @@ nav a{
 }
 table{
     border-collapse: collapse;
-    width:30%;
-    height:50%;
+    justify-content: space-around;
 }  
 td{
     border: 1px solid #dddddd;
@@ -124,8 +145,8 @@ background-color: #dddddd;
     background-position: center; 
     background-size: cover;
     background-color: black;
-    color: white;    
-    height: 30vh;  
+    color: white;  
+    height: 300px;    
 }
 .con-footer{
     width: 80%;
@@ -133,7 +154,13 @@ background-color: #dddddd;
     margin-right: auto;
     display: flex;
     flex-direction: column;
-    padding-top: 100px;
+    padding-top: 60px;
+}
+@media(max-width: 768px){
+    .con-footer{
+        justify-content: center;
+        height: 20vh;
+    }
 }
 .foot-title{
     font-size: 40px;
@@ -170,4 +197,22 @@ legend{
 .contact-title{
     text-align: center;
     font-size: 30px;
+}
+
+/*about us*/
+.about-split{
+    display: flex;
+    margin-bottom: 10px;
+}
+@media (max-width: 768px){
+    .about-split{
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+.about-img{
+    margin-left: 15px;
+}
+.about-img2{
+    margin-right: 25px;
 }
